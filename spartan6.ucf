@@ -1,0 +1,32 @@
+# onBoard Leds
+ NET "LED<0>" LOC = "U18"; # Bank = 1, Pin name = IO_L52N_M1DQ15, 	   Sch name = LD0
+ NET "LED<1>" LOC = "M14"; # Bank = 1, Pin name = IO_L53P, 		 	   Sch name = LD1
+ NET "LED<2>" LOC = "N14"; # Bank = 1, Pin name = IO_L53N_VREF, 	   Sch name = LD2
+ NET "LED<3>" LOC = "L14"; # Bank = 1, Pin name = IO_L61P, 		 	   Sch name = LD3
+ NET "LED<4>" LOC = "M13"; # Bank = 1, Pin name = IO_L61N, 		 	   Sch name = LD4
+ NET "LED<5>" LOC = "D4";  # Bank = 0, Pin name = IO_L1P_HSWAPEN_0,	   Sch name = HSWAP/LD5
+ NET "LED<6>" LOC = "P16"; # Bank = 1, Pin name = IO_L74N_DOUT_BUSY_1, Sch name = LD6
+ NET "LED<7>" LOC = "N12"; # Bank = 2, Pin name = IO_L13P_M1_2,		   Sch name = M1/LD7
+
+# onBoard PUSH BUTTONS 
+ NET "BTN<0>" LOC = "N4";  # Bank = 3, Pin name = IO_L1P, 	   		   Sch name = BTNU
+ NET "BTN<1>" LOC = "P4";  # Bank = 3, Pin name = IO_L2P, 	   		   Sch name = BTNL
+ NET "BTN<2>" LOC = "P3";  # Bank = 3, Pin name = IO_L2N, 	   		   Sch name = BTND
+ NET "BTN<3>" LOC = "F6";  # Bank = 3, Pin name = IO_L55P_M3A13, 	   Sch name = BTNR
+ NET "BTN<4>" LOC = "F5";  # Bank = 3, Pin name = IO_L55N_M3A14, 	   Sch name = BTNC
+
+# onBoard SWITCHES
+ NET "SW<0>" LOC = "A10"; # Bank = 0, Pin name = IO_L37N_GCLK12,      	Sch name = SW0
+ NET "SW<1>" LOC = "D14"; # Bank = 0, Pin name = IO_L65P_SCP3,      	Sch name = SW1
+ NET "SW<2>" LOC = "C14"; # Bank = 0, Pin name = IO_L65N_SCP2,      	Sch name = SW2
+ NET "SW<3>" LOC = "P15"; # Bank = 1, Pin name = IO_L74P_AWAKE_1,       Sch name = SW3
+ NET "SW<4>" LOC = "P12"; # Bank = 2, Pin name = IO_L13N_D10,      		Sch name = SW4
+ NET "SW<5>" LOC = "R5";  # Bank = 2, Pin name = IO_L48P_D7,      		Sch name = SW5
+ NET "SW<6>" LOC = "T5";  # Bank = 2, Pin name = IO_L48N_RDWR_B_VREF_2, Sch name = SW6
+ NET "SW<7>" LOC = "E4";  # Bank = 3, Pin name = IO_L54P_M3RESET,       Sch name = SW7
+
+# USB UART Connector
+ NET "UART_TXD" LOC = "B16"; # Bank = 0, Pin name = IO_L66P_SCP1, Sch name = USBB-TXD
+
+# clock pin for Atlys rev C board
+ NET "CLK"   LOC = "L15"; # Bank = 1, Pin name = IO_L42P_GCLK7_M1UDM, Type = GCLK, Sch name = GCLK

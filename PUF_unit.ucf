@@ -1,0 +1,205 @@
+# Switches
+
+INST "Core_PUF/Coarse[63].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[63].PC_PUF/Coarse" LOC = SLICE_X85Y120;
+INST "Core_PUF/Coarse[62].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[62].PC_PUF/Coarse" LOC = SLICE_X85Y120;
+
+INST "Core_PUF/Coarse[61].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[61].PC_PUF/Coarse" LOC = SLICE_X85Y121;
+INST "Core_PUF/Coarse[60].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[60].PC_PUF/Coarse" LOC = SLICE_X85Y121;
+
+INST "Core_PUF/Coarse[59].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[59].PC_PUF/Coarse" LOC = SLICE_X85Y122;
+INST "Core_PUF/Coarse[58].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[58].PC_PUF/Coarse" LOC = SLICE_X85Y122;
+
+INST "Core_PUF/Coarse[57].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[57].PC_PUF/Coarse" LOC = SLICE_X85Y123;
+INST "Core_PUF/Coarse[56].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[56].PC_PUF/Coarse" LOC = SLICE_X85Y123;
+
+INST "Core_PUF/Coarse[55].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[55].PC_PUF/Coarse" LOC = SLICE_X85Y124;
+INST "Core_PUF/Coarse[54].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[54].PC_PUF/Coarse" LOC = SLICE_X85Y124;
+
+INST "Core_PUF/Coarse[53].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[53].PC_PUF/Coarse" LOC = SLICE_X85Y125;
+INST "Core_PUF/Coarse[52].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[52].PC_PUF/Coarse" LOC = SLICE_X85Y125;
+
+INST "Core_PUF/Coarse[51].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[51].PC_PUF/Coarse" LOC = SLICE_X85Y126;
+INST "Core_PUF/Coarse[50].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[50].PC_PUF/Coarse" LOC = SLICE_X85Y126;
+
+INST "Core_PUF/Coarse[49].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[49].PC_PUF/Coarse" LOC = SLICE_X85Y127;
+INST "Core_PUF/Coarse[48].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[48].PC_PUF/Coarse" LOC = SLICE_X85Y127;
+
+INST "Core_PUF/Coarse[47].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[47].PC_PUF/Coarse" LOC = SLICE_X85Y128;
+INST "Core_PUF/Coarse[46].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[46].PC_PUF/Coarse" LOC = SLICE_X85Y128;
+
+INST "Core_PUF/Coarse[45].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[45].PC_PUF/Coarse" LOC = SLICE_X85Y129;
+INST "Core_PUF/Coarse[44].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[44].PC_PUF/Coarse" LOC = SLICE_X85Y129;
+
+INST "Core_PUF/Coarse[43].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[43].PC_PUF/Coarse" LOC = SLICE_X85Y130;
+INST "Core_PUF/Coarse[42].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[42].PC_PUF/Coarse" LOC = SLICE_X85Y130;
+
+INST "Core_PUF/Coarse[41].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[41].PC_PUF/Coarse" LOC = SLICE_X85Y131;
+INST "Core_PUF/Coarse[40].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[40].PC_PUF/Coarse" LOC = SLICE_X85Y131;
+
+INST "Core_PUF/Coarse[39].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[39].PC_PUF/Coarse" LOC = SLICE_X85Y132;
+INST "Core_PUF/Coarse[38].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[38].PC_PUF/Coarse" LOC = SLICE_X85Y132;
+
+INST "Core_PUF/Coarse[37].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[37].PC_PUF/Coarse" LOC = SLICE_X85Y133;
+INST "Core_PUF/Coarse[36].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[36].PC_PUF/Coarse" LOC = SLICE_X85Y133;
+
+INST "Core_PUF/Coarse[35].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[35].PC_PUF/Coarse" LOC = SLICE_X85Y134;
+INST "Core_PUF/Coarse[34].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[34].PC_PUF/Coarse" LOC = SLICE_X85Y134;
+
+INST "Core_PUF/Coarse[33].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[33].PC_PUF/Coarse" LOC = SLICE_X85Y135;
+INST "Core_PUF/Coarse[32].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[32].PC_PUF/Coarse" LOC = SLICE_X85Y135;
+
+INST "Core_PUF/Coarse[31].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[31].PC_PUF/Coarse" LOC = SLICE_X85Y136;
+INST "Core_PUF/Coarse[30].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[30].PC_PUF/Coarse" LOC = SLICE_X85Y136;
+
+INST "Core_PUF/Coarse[29].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[29].PC_PUF/Coarse" LOC = SLICE_X85Y137;
+INST "Core_PUF/Coarse[28].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[28].PC_PUF/Coarse" LOC = SLICE_X85Y137;
+
+INST "Core_PUF/Coarse[27].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[27].PC_PUF/Coarse" LOC = SLICE_X85Y138;
+INST "Core_PUF/Coarse[26].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[26].PC_PUF/Coarse" LOC = SLICE_X85Y138;
+
+INST "Core_PUF/Coarse[25].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[25].PC_PUF/Coarse" LOC = SLICE_X85Y139;
+INST "Core_PUF/Coarse[24].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[24].PC_PUF/Coarse" LOC = SLICE_X85Y139;
+
+INST "Core_PUF/Coarse[23].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[23].PC_PUF/Coarse" LOC = SLICE_X85Y140;
+INST "Core_PUF/Coarse[22].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[22].PC_PUF/Coarse" LOC = SLICE_X85Y140;
+
+INST "Core_PUF/Coarse[21].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[21].PC_PUF/Coarse" LOC = SLICE_X85Y141;
+INST "Core_PUF/Coarse[20].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[20].PC_PUF/Coarse" LOC = SLICE_X85Y141;
+
+INST "Core_PUF/Coarse[19].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[19].PC_PUF/Coarse" LOC = SLICE_X85Y142;
+INST "Core_PUF/Coarse[18].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[18].PC_PUF/Coarse" LOC = SLICE_X85Y142;
+
+INST "Core_PUF/Coarse[17].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[17].PC_PUF/Coarse" LOC = SLICE_X85Y143;
+INST "Core_PUF/Coarse[16].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[16].PC_PUF/Coarse" LOC = SLICE_X85Y143;
+
+INST "Core_PUF/Coarse[15].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[15].PC_PUF/Coarse" LOC = SLICE_X85Y144;
+INST "Core_PUF/Coarse[14].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[14].PC_PUF/Coarse" LOC = SLICE_X85Y144;
+
+INST "Core_PUF/Coarse[13].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[13].PC_PUF/Coarse" LOC = SLICE_X85Y145;
+INST "Core_PUF/Coarse[12].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[12].PC_PUF/Coarse" LOC = SLICE_X85Y145;
+
+INST "Core_PUF/Coarse[11].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[11].PC_PUF/Coarse" LOC = SLICE_X85Y146;
+INST "Core_PUF/Coarse[10].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[10].PC_PUF/Coarse" LOC = SLICE_X85Y146;
+
+INST "Core_PUF/Coarse[9].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[9].PC_PUF/Coarse" LOC = SLICE_X85Y147;
+INST "Core_PUF/Coarse[8].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[8].PC_PUF/Coarse" LOC = SLICE_X85Y147;
+
+INST "Core_PUF/Coarse[7].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[7].PC_PUF/Coarse" LOC = SLICE_X85Y148;
+INST "Core_PUF/Coarse[6].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[6].PC_PUF/Coarse" LOC = SLICE_X85Y148;
+
+INST "Core_PUF/Coarse[5].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[5].PC_PUF/Coarse" LOC = SLICE_X85Y149;
+INST "Core_PUF/Coarse[4].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[4].PC_PUF/Coarse" LOC = SLICE_X85Y149;
+
+INST "Core_PUF/Coarse[3].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[3].PC_PUF/Coarse" LOC = SLICE_X85Y150;
+INST "Core_PUF/Coarse[2].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[2].PC_PUF/Coarse" LOC = SLICE_X85Y150;
+
+INST "Core_PUF/Coarse[1].PC_PUF/Coarse" BEL = A6LUT;
+INST "Core_PUF/Coarse[1].PC_PUF/Coarse" LOC = SLICE_X85Y151;
+INST "Core_PUF/Coarse[0].PC_PUF/Coarse" BEL = C6LUT;
+INST "Core_PUF/Coarse[0].PC_PUF/Coarse" LOC = SLICE_X85Y151;
+
+
+# Tune
+
+INST "Tune/Coarse[15].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[15].PC/Coarse" LOC = SLICE_X85Y152;
+INST "Tune/Coarse[14].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[14].PC/Coarse" LOC = SLICE_X85Y152;
+
+INST "Tune/Coarse[13].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[13].PC/Coarse" LOC = SLICE_X85Y153;
+INST "Tune/Coarse[12].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[12].PC/Coarse" LOC = SLICE_X85Y153;
+
+INST "Tune/Coarse[11].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[11].PC/Coarse" LOC = SLICE_X85Y154;
+INST "Tune/Coarse[10].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[10].PC/Coarse" LOC = SLICE_X85Y154;
+
+INST "Tune/Coarse[9].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[9].PC/Coarse" LOC = SLICE_X85Y155;
+INST "Tune/Coarse[8].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[8].PC/Coarse" LOC = SLICE_X85Y155;
+
+INST "Tune/Coarse[7].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[7].PC/Coarse" LOC = SLICE_X85Y156;
+INST "Tune/Coarse[6].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[6].PC/Coarse" LOC = SLICE_X85Y156;
+
+INST "Tune/Coarse[5].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[5].PC/Coarse" LOC = SLICE_X85Y157;
+INST "Tune/Coarse[4].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[4].PC/Coarse" LOC = SLICE_X85Y157;
+
+INST "Tune/Coarse[3].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[3].PC/Coarse" LOC = SLICE_X85Y158;
+INST "Tune/Coarse[2].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[2].PC/Coarse" LOC = SLICE_X85Y158;
+
+INST "Tune/Coarse[1].PC/Coarse" BEL = A6LUT;
+INST "Tune/Coarse[1].PC/Coarse" LOC = SLICE_X85Y159;
+INST "Tune/Coarse[0].PC/Coarse" BEL = C6LUT;
+INST "Tune/Coarse[0].PC/Coarse" LOC = SLICE_X85Y159;
+
