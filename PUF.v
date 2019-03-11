@@ -1,9 +1,8 @@
-module PUF #(parameter N_CB = 64, N = 16, k = 5)(// k = log2(2N)
+module PUF #(parameter N = 16, k = 5)(// k = log2(2N)
 	input wire [N-1:0]in1,
 	input wire [N-1:0]in2,
-	input wire [N_CB-1:0] challenge,
 	input wire [k-1:0] tune_level,
-	output wire [N-1:0]response
+	output wire [2*N-1:0]response
    );
 
 	wire [N-1:0] tune_top, tune_bottom;
@@ -31,6 +30,7 @@ module PUF #(parameter N_CB = 64, N = 16, k = 5)(// k = log2(2N)
 	wire [2*N-1:0]topw, bottomw;
 	genvar k;
 	// We generate the blocks required to get MAC arbitration
+	// Modified PUF_unit only has the PDL coarse for tuning. 
 	generate
 	for(k = 2*N-1; k>=0; k = k - 1)
 	begin:
@@ -45,8 +45,7 @@ module PUF #(parameter N_CB = 64, N = 16, k = 5)(// k = log2(2N)
 	 .tune(tune_bottom),
     .out(bottomw[k])
     );
-
-
+// Xilinx based arbiter
 	FD arbiter(
 		.Q(response[k]),
 		.C(topw[k]),
