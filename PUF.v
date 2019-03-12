@@ -1,11 +1,12 @@
 module PUF #(parameter N = 4, k = 3)(// k = log2(2N)
 	input wire [N-1:0]challenge1,
 	input wire [N-1:0]challenge2,
-	input wire [k-1:0] tune_level,
+	input wire [4:0] tune_level,
 	output wire [2*N-1:0]response
    );
 
-	wire [2*N-1:0] tune_top, tune_bottom;
+	wire [15:0] tune_top [0:7];
+	wire [15:0] tune_bottom [0:7];
 
 	(* KEEP_HIERARCHY = "TRUE" *)
 	// change this decoder to basically add them to each PDL.
@@ -40,13 +41,13 @@ module PUF #(parameter N = 4, k = 3)(// k = log2(2N)
 	generate
 	for(p = 2*N-1; p>=0; p = p - 1)
 	begin: PUF_id
-	PUF_unit #(N) top(
+	PUF_unit #(16) top(
     .in(out_top[p]),
 		.tune(tune_top[p]),
     .out(topw[p])
     );
 
-	PUF_unit #(N) bottom(
+	PUF_unit #(16) bottom(
     .in(out_bottom[p]),
 	 .tune(tune_bottom[p]),
     .out(bottomw[p])
