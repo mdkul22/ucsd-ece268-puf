@@ -1,6 +1,6 @@
-module PUF #(parameter N = 16, k = 5)(// k = log2(2N)
-	input wire [N-1:0]in1,
-	input wire [N-1:0]in2,
+module PUF #(parameter N = 4, k = 3)(// k = log2(2N)
+	input wire [N-1:0]challenge1,
+	input wire [N-1:0]challenge2,
 	input wire [k-1:0] tune_level,
 	output wire [2*N-1:0]response
    );
@@ -8,6 +8,7 @@ module PUF #(parameter N = 16, k = 5)(// k = log2(2N)
 	wire [N-1:0] tune_top, tune_bottom;
 
 	(* KEEP_HIERARCHY = "TRUE" *)
+	// change this decoder to basically add them to each PDL.
 	Decoder #(N, k) Decoder(
     .tune_level(tune_level),
     .top(tune_top),
@@ -16,40 +17,40 @@ module PUF #(parameter N = 16, k = 5)(// k = log2(2N)
 
 	wire [2*N-1:0] out_top, out_bottom;
 	Multiplier #(N) topMult(
-		.x(in1),
-		.y(in2),
-		.output(out_top)
+		.in1(challenge1),
+		.in2(challenge2),
+		.product(out_top)
 		);
 
 	Multiplier #(N) bottomMult(
-		.x(in1),
-		.y(in2),
-		.output(out_bottom)
+		.in1(challenge1),
+		.in2(challenge2),
+		.product(out_bottom)
 		);
 
 	wire [2*N-1:0]topw, bottomw;
-	genvar k;
+	genvar p;
 	// We generate the blocks required to get MAC arbitration
-	// Modified PUF_unit only has the PDL coarse for tuning. 
+	// Modified PUF_unit only has the PDL coarse for tuning.
 	generate
-	for(k = 2*N-1; k>=0; k = k - 1)
-	begin:
+	for(p = 2*N-1; p>=0; p = k - 1)
+	begin: PUF_id
 	PUF_unit #(N) top(
-    .in(out_top[k]),
+    .in(out_top[p]),
 		.tune(tune_top),
-    .out(topw[k])
+    .out(topw[p])
     );
 
 	PUF_unit #(N) bottom(
-    .in(out_bottom[k]),
+    .in(out_bottom[p]),
 	 .tune(tune_bottom),
-    .out(bottomw[k])
+    .out(bottomw[p])
     );
 // Xilinx based arbiter
 	FD arbiter(
-		.Q(response[k]),
-		.C(topw[k]),
-		.D(bottomw[k])
+		.Q(response[p]),
+		.C(topw[p]),
+		.D(bottomw[p])
     );
 	end
 	endgenerate
