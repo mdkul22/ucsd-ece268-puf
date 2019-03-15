@@ -4,6 +4,6 @@ module Multiplier #(parameter N = 16)(// k = log2(2N)
 	output wire [2*N-1:0]product
    );
 
-   assign product = in1 * in2;
+   assign product <= in1 * in2;
 
 endmodule
