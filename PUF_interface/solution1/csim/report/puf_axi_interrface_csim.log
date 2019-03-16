@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Generating csim.exe
+obj/block_test.o: In function `main':
+C:\Users\Mayunk\Desktop\ECE268\puf_interface\PUF_interface\solution1\csim\build/../../../block_test.cpp:14: undefined reference to `puf_axi_interrface(ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<5>, ap_uint<16>, ap_uint<16>, ap_uint<16>, ap_uint<5>)'
+collect2: ld returned 1 exit status
+make: *** [csim.exe] Error 1
+CRITICAL WARNING: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

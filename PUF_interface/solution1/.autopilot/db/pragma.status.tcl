@@ -1,0 +1,7 @@
+lappend pragmaStatus0 {pragma "INTERFACE" source "C:/Users/Mayunk/Desktop/ECE268/puf_interface/PUF_interface/puf_axi_interface.cpp" location "puf_axi_interface" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus1 {pragma "INTERFACE" source "C:/Users/Mayunk/Desktop/ECE268/puf_interface/PUF_interface/puf_axi_interface.cpp" location "puf_axi_interface" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus2 {pragma "INTERFACE" source "C:/Users/Mayunk/Desktop/ECE268/puf_interface/PUF_interface/puf_axi_interface.cpp" location "puf_axi_interface" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus3 {pragma "INTERFACE" source "C:/Users/Mayunk/Desktop/ECE268/puf_interface/PUF_interface/puf_axi_interface.cpp" location "puf_axi_interface" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus4 {pragma "INTERFACE" source "C:/Users/Mayunk/Desktop/ECE268/puf_interface/PUF_interface/puf_axi_interface.cpp" location "puf_axi_interface" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus5 {pragma "INTERFACE" source "C:/Users/Mayunk/Desktop/ECE268/puf_interface/PUF_interface/puf_axi_interface.cpp" location "puf_axi_interface" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}
+lappend pragmaStatus6 {pragma "INTERFACE" source "C:/Users/Mayunk/Desktop/ECE268/puf_interface/PUF_interface/puf_axi_interface.cpp" location "puf_axi_interface" found 1 funcFound 1 applied 1 ambiguous 0 reason "null"}

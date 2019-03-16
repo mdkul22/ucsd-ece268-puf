@@ -765,3 +765,28 @@ set_property LOC SLICE_X35Y131 [get_cells "design_1_i/PUF_0/inst/PUF_id[7].botto
 
 set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[7].bottom/Tune/Coarse[15].PC/Coarse"]
 set_property LOC SLICE_X35Y131 [get_cells "design_1_i/PUF_0/inst/PUF_id[7].bottom/Tune/Coarse[15].PC/Coarse"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[0].arbiter"]
+set_property LOC SLICE_X38Y132 [get_cells "design_1_i/PUF_0/inst/PUF_id[0].arbiter"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[1].arbiter"]
+set_property LOC SLICE_X38Y133 [get_cells "design_1_i/PUF_0/inst/PUF_id[1].arbiter"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[2].arbiter"]
+set_property LOC SLICE_X38Y134 [get_cells "design_1_i/PUF_0/inst/PUF_id[2].arbiter"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[3].arbiter"]
+set_property LOC SLICE_X38Y135 [get_cells "design_1_i/PUF_0/inst/PUF_id[3].arbiter"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[4].arbiter"]
+set_property LOC SLICE_X38Y136 [get_cells "design_1_i/PUF_0/inst/PUF_id[4].arbiter"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[5].arbiter"]
+set_property LOC SLICE_X38Y137 [get_cells "design_1_i/PUF_0/inst/PUF_id[5].arbiter"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[6].arbiter"]
+set_property LOC SLICE_X38Y138 [get_cells "design_1_i/PUF_0/inst/PUF_id[6].arbiter"]
+
+set_property BEL DLUT6 [get_cells "design_1_i/PUF_0/inst/PUF_id[7].arbiter"]
+set_property LOC SLICE_X38Y139 [get_cells "design_1_i/PUF_0/inst/PUF_id[7].arbiter"]
+

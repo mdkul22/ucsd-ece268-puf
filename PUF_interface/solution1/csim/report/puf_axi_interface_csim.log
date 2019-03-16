@@ -1,0 +1,11 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../block_test.cpp in debug mode
+   Compiling ../../../puf_axi_interface.cpp in debug mode
+   Generating csim.exe
+challenge rtl inputs: 15 15
+response: 25
+Tuner :3
+Products :318
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

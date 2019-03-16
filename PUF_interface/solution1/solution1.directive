@@ -1,0 +1,47 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="puf_axi_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="challenge1axi" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="puf_axi_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="challenge2axi" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="puf_axi_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="responseaxi" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="puf_axi_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="tuneraxi" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="puf_axi_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="output1axi" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="puf_axi_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="output2axi" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="puf_axi_interface" label="" functionLabel="">
+            <pragma name="INTERFACE">
+                <option name="s_axilite" value="" positionalBoolean="mode"/>
+                <option name="port" value="startaxi" positionalBoolean="4"/>
+            </pragma>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+
