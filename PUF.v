@@ -1,7 +1,7 @@
 module PUF #(parameter N = 4, k = 3)(// k = log2(2N)
 	input wire [N-1:0]challenge1,
 	input wire [N-1:0]challenge2,
-	input wire [40:0] tune_level,
+	input wire [39:0] tune_level,
 	output wire [2*N-1:0]response,
 	output wire [2*N-1:0] out_top,
 	output wire [2*N-1:0] out_bottom,
@@ -18,21 +18,23 @@ module PUF #(parameter N = 4, k = 3)(// k = log2(2N)
 	for (p=2*N-1;p>=0;p=p-1)
 	begin:decoder_id
 	 Decoder #(16,5) Decoder(
-    .tune_level(tune_level[5*p:(5*p)+4]),
+    .tune_level(tune_level[(5*p+4):5*p]),
     .top(tune_top[p]),
     .bottom(tune_bottom[p])
     );
 	end
 	endgenerate
 
-reg [2*N-1:0] product1, product2
-always@(start) begin
+(* use_dsp48= "yes"*) reg [2*N-1:0] product1, product2;
+
+always@(start==1)
+begin
 product1 <= challenge1 * challenge2;
 product2 <= challenge2 * challenge1;
 end
 
-out_top = product1;
-out_bottom = product2;
+assign out_top = product1;
+assign out_bottom = product2;
 
 	wire [2*N-1:0]topw, bottomw;
 	// We generate the blocks required to get MAC arbitration

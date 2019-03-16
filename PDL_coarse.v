@@ -4,8 +4,7 @@ module PDL_Coarse(
     (*S = "YES", KEEP = "TRUE"*)output wire out
     );
 	 
-(*LOCK_PINS = "all" *)
-	 
+
 LUT6 #(
 .INIT(64'h55D5555555555555) // Specify LUT Contents
 ) Coarse (
