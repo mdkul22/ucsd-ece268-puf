@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="puf_axi_interface_v2" xd:componentRef="puf_axi_interface_v2" xd:initiationInterval="1" xd:clockPeriod="10.000" xd:sequential="false" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="challenge1axi" xd:originalName="challenge1axi" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="4"/>
+  <xd:arg xd:name="challenge2axi" xd:originalName="challenge2axi" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="4"/>
+  <xd:arg xd:name="*(responseaxi)" xd:originalName="responseaxi" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x20" xd:statusOffset="0x24" xd:handshakeRef="ap_vld" xd:dataWidth="8"/>
+  <xd:arg xd:name="tuneraxi" xd:originalName="tuneraxi" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="5"/>
+  <xd:arg xd:name="*(challenge1in)" xd:originalName="challenge1in" xd:direction="out" xd:interfaceRef="challenge1in_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="4" xd:firstOut="0"/>
+  <xd:arg xd:name="*(challenge2in)" xd:originalName="challenge2in" xd:direction="out" xd:interfaceRef="challenge2in_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="4" xd:firstOut="0"/>
+  <xd:arg xd:name="responsein" xd:originalName="responsein" xd:direction="in" xd:interfaceRef="responsein_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
+  <xd:arg xd:name="*(tuner)" xd:originalName="tuner" xd:direction="out" xd:interfaceRef="tuner_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="5" xd:firstOut="0"/>
+  <xd:arg xd:name="*(output1axi)" xd:originalName="output1axi" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="8" xd:offset="0x30" xd:statusOffset="0x34" xd:handshakeRef="ap_vld"/>
+  <xd:arg xd:name="*(output2axi)" xd:originalName="output2axi" xd:direction="out" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="8" xd:offset="0x38" xd:statusOffset="0x3C" xd:handshakeRef="ap_vld"/>
+  <xd:arg xd:name="outputin1" xd:originalName="outputin1" xd:direction="in" xd:interfaceRef="outputin1_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
+  <xd:arg xd:name="outputin2" xd:originalName="outputin2" xd:direction="in" xd:interfaceRef="outputin2_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="8" xd:firstOut="0"/>
+  <xd:arg xd:name="*(startin)" xd:originalName="startin" xd:direction="out" xd:interfaceRef="startin_V" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:arg xd:name="startaxi" xd:originalName="startaxi" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:dataWidth="1" xd:offset="0x40" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="116" xd:FF="116" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="puf_axi_interface_v2.cpp" path="C:\Users\Mayunk\Desktop\ECE268\puf_interface\PUF_interface\puf_axi_interface_v2.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="block_test.cpp" path="C:\Users\Mayunk\Desktop\ECE268\puf_interface\PUF_interface\block_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,779 @@
+
+
+================================================================
+== Vivado HLS Report for 'puf_axi_interface_v2'
+================================================================
+* Date:           Sat Mar 16 17:16:41 2019
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        PUF_Interface_2
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      1.00|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+ <State 1> : 1.00ns
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4 %challenge1axi_V), !map !26"
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4 %challenge2axi_V), !map !32"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %responseaxi_V), !map !36"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5 %tuneraxi_V), !map !40"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %challenge1in_V), !map !44"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %challenge2in_V), !map !48"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %responsein_V), !map !52"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i5* %tuner_V), !map !56"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output1axi_V), !map !60"
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output2axi_V), !map !64"
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %outputin1_V), !map !68"
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %outputin2_V), !map !72"
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %startin_V), !map !76"
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %startaxi_V), !map !80"
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([21 x i8]* @puf_axi_interface_v2_1) nounwind"
+ST_1 : Operation 17 [1/1] (1.00ns)   --->   "%startaxi_V_read = call i1 @_ssdm_op_Read.s_axilite.i1(i1 %startaxi_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%outputin2_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %outputin2_V)"
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%outputin1_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %outputin1_V)"
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%responsein_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %responsein_V)"
+ST_1 : Operation 21 [1/1] (1.00ns)   --->   "%tuneraxi_V_read = call i5 @_ssdm_op_Read.s_axilite.i5(i5 %tuneraxi_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 22 [1/1] (1.00ns)   --->   "%challenge2axi_V_read = call i4 @_ssdm_op_Read.s_axilite.i4(i4 %challenge2axi_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 23 [1/1] (1.00ns)   --->   "%challenge1axi_V_read = call i4 @_ssdm_op_Read.s_axilite.i4(i4 %challenge1axi_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %startaxi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:9]
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %output2axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:9]
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %output1axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:9]
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i5 %tuneraxi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:9]
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %responseaxi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:9]
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i4 %challenge2axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:9]
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i4 %challenge1axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:9]
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:10]
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i4P(i4* %challenge1in_V, i4 %challenge1axi_V_read)" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:11]
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i4P(i4* %challenge2in_V, i4 %challenge2axi_V_read)" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:12]
+ST_1 : Operation 34 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i8P(i8* %responseaxi_V, i8 %responsein_V_read)" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:13]   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 35 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i5P(i5* %tuner_V, i5 %tuneraxi_V_read)" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:14]
+ST_1 : Operation 36 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i8P(i8* %output1axi_V, i8 %outputin1_V_read)" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:15]   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 37 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i8P(i8* %output2axi_V, i8 %outputin2_V_read)" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:16]   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i1P(i1* %startin_V, i1 %startaxi_V_read)" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:17]
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "ret void" [../puf_interface/PUF_interface/puf_axi_interface_v2.cpp:19]
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 1
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ challenge1axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ challenge2axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ responseaxi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuneraxi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ challenge1in_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ challenge2in_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ responsein_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuner_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ output1axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ output2axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ outputin1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ outputin2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ startin_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ startaxi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+StgValue_2           (specbitsmap  ) [ 00]
+StgValue_3           (specbitsmap  ) [ 00]
+StgValue_4           (specbitsmap  ) [ 00]
+StgValue_5           (specbitsmap  ) [ 00]
+StgValue_6           (specbitsmap  ) [ 00]
+StgValue_7           (specbitsmap  ) [ 00]
+StgValue_8           (specbitsmap  ) [ 00]
+StgValue_9           (specbitsmap  ) [ 00]
+StgValue_10          (specbitsmap  ) [ 00]
+StgValue_11          (specbitsmap  ) [ 00]
+StgValue_12          (specbitsmap  ) [ 00]
+StgValue_13          (specbitsmap  ) [ 00]
+StgValue_14          (specbitsmap  ) [ 00]
+StgValue_15          (specbitsmap  ) [ 00]
+StgValue_16          (spectopmodule) [ 00]
+startaxi_V_read      (read         ) [ 00]
+outputin2_V_read     (read         ) [ 00]
+outputin1_V_read     (read         ) [ 00]
+responsein_V_read    (read         ) [ 00]
+tuneraxi_V_read      (read         ) [ 00]
+challenge2axi_V_read (read         ) [ 00]
+challenge1axi_V_read (read         ) [ 00]
+StgValue_24          (specinterface) [ 00]
+StgValue_25          (specinterface) [ 00]
+StgValue_26          (specinterface) [ 00]
+StgValue_27          (specinterface) [ 00]
+StgValue_28          (specinterface) [ 00]
+StgValue_29          (specinterface) [ 00]
+StgValue_30          (specinterface) [ 00]
+StgValue_31          (specinterface) [ 00]
+StgValue_32          (write        ) [ 00]
+StgValue_33          (write        ) [ 00]
+StgValue_34          (write        ) [ 00]
+StgValue_35          (write        ) [ 00]
+StgValue_36          (write        ) [ 00]
+StgValue_37          (write        ) [ 00]
+StgValue_38          (write        ) [ 00]
+StgValue_39          (ret          ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="challenge1axi_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge1axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="challenge2axi_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge2axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="responseaxi_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="responseaxi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="tuneraxi_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="challenge1in_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge1in_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="challenge2in_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge2in_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="responsein_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="responsein_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="tuner_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="output1axi_V">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="output1axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="output2axi_V">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="output2axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="outputin1_V">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputin1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="outputin2_V">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputin2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="startin_V">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="startin_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="startaxi_V">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="startaxi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="puf_axi_interface_v2_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i4P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.s_axilite.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i5P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i1P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="startaxi_V_read_read_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="1" slack="0"/>
+<pin id="60" dir="0" index="1" bw="1" slack="0"/>
+<pin id="61" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="startaxi_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="outputin2_V_read_read_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="8" slack="0"/>
+<pin id="66" dir="0" index="1" bw="8" slack="0"/>
+<pin id="67" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="outputin2_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="outputin1_V_read_read_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="8" slack="0"/>
+<pin id="72" dir="0" index="1" bw="8" slack="0"/>
+<pin id="73" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="outputin1_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="responsein_V_read_read_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="8" slack="0"/>
+<pin id="78" dir="0" index="1" bw="8" slack="0"/>
+<pin id="79" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="responsein_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="tuneraxi_V_read_read_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="5" slack="0"/>
+<pin id="84" dir="0" index="1" bw="5" slack="0"/>
+<pin id="85" dir="1" index="2" bw="5" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="challenge2axi_V_read_read_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="4" slack="0"/>
+<pin id="90" dir="0" index="1" bw="4" slack="0"/>
+<pin id="91" dir="1" index="2" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="challenge2axi_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="challenge1axi_V_read_read_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="4" slack="0"/>
+<pin id="96" dir="0" index="1" bw="4" slack="0"/>
+<pin id="97" dir="1" index="2" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="challenge1axi_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="StgValue_32_write_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="0" slack="0"/>
+<pin id="102" dir="0" index="1" bw="4" slack="0"/>
+<pin id="103" dir="0" index="2" bw="4" slack="0"/>
+<pin id="104" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_32/1 "/>
+</bind>
+</comp>
+
+<comp id="108" class="1004" name="StgValue_33_write_fu_108">
+<pin_list>
+<pin id="109" dir="0" index="0" bw="0" slack="0"/>
+<pin id="110" dir="0" index="1" bw="4" slack="0"/>
+<pin id="111" dir="0" index="2" bw="4" slack="0"/>
+<pin id="112" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_33/1 "/>
+</bind>
+</comp>
+
+<comp id="116" class="1004" name="StgValue_34_write_fu_116">
+<pin_list>
+<pin id="117" dir="0" index="0" bw="0" slack="0"/>
+<pin id="118" dir="0" index="1" bw="8" slack="0"/>
+<pin id="119" dir="0" index="2" bw="8" slack="0"/>
+<pin id="120" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_34/1 "/>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="StgValue_35_write_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="0" slack="0"/>
+<pin id="126" dir="0" index="1" bw="5" slack="0"/>
+<pin id="127" dir="0" index="2" bw="5" slack="0"/>
+<pin id="128" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_35/1 "/>
+</bind>
+</comp>
+
+<comp id="132" class="1004" name="StgValue_36_write_fu_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="0" slack="0"/>
+<pin id="134" dir="0" index="1" bw="8" slack="0"/>
+<pin id="135" dir="0" index="2" bw="8" slack="0"/>
+<pin id="136" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_36/1 "/>
+</bind>
+</comp>
+
+<comp id="140" class="1004" name="StgValue_37_write_fu_140">
+<pin_list>
+<pin id="141" dir="0" index="0" bw="0" slack="0"/>
+<pin id="142" dir="0" index="1" bw="8" slack="0"/>
+<pin id="143" dir="0" index="2" bw="8" slack="0"/>
+<pin id="144" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_37/1 "/>
+</bind>
+</comp>
+
+<comp id="148" class="1004" name="StgValue_38_write_fu_148">
+<pin_list>
+<pin id="149" dir="0" index="0" bw="0" slack="0"/>
+<pin id="150" dir="0" index="1" bw="1" slack="0"/>
+<pin id="151" dir="0" index="2" bw="1" slack="0"/>
+<pin id="152" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_38/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="62"><net_src comp="34" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="63"><net_src comp="26" pin="0"/><net_sink comp="58" pin=1"/></net>
+
+<net id="68"><net_src comp="36" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="69"><net_src comp="22" pin="0"/><net_sink comp="64" pin=1"/></net>
+
+<net id="74"><net_src comp="36" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="75"><net_src comp="20" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="36" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="12" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="86"><net_src comp="38" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="87"><net_src comp="6" pin="0"/><net_sink comp="82" pin=1"/></net>
+
+<net id="92"><net_src comp="40" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="93"><net_src comp="2" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+<net id="98"><net_src comp="40" pin="0"/><net_sink comp="94" pin=0"/></net>
+
+<net id="99"><net_src comp="0" pin="0"/><net_sink comp="94" pin=1"/></net>
+
+<net id="105"><net_src comp="50" pin="0"/><net_sink comp="100" pin=0"/></net>
+
+<net id="106"><net_src comp="8" pin="0"/><net_sink comp="100" pin=1"/></net>
+
+<net id="107"><net_src comp="94" pin="2"/><net_sink comp="100" pin=2"/></net>
+
+<net id="113"><net_src comp="50" pin="0"/><net_sink comp="108" pin=0"/></net>
+
+<net id="114"><net_src comp="10" pin="0"/><net_sink comp="108" pin=1"/></net>
+
+<net id="115"><net_src comp="88" pin="2"/><net_sink comp="108" pin=2"/></net>
+
+<net id="121"><net_src comp="52" pin="0"/><net_sink comp="116" pin=0"/></net>
+
+<net id="122"><net_src comp="4" pin="0"/><net_sink comp="116" pin=1"/></net>
+
+<net id="123"><net_src comp="76" pin="2"/><net_sink comp="116" pin=2"/></net>
+
+<net id="129"><net_src comp="54" pin="0"/><net_sink comp="124" pin=0"/></net>
+
+<net id="130"><net_src comp="14" pin="0"/><net_sink comp="124" pin=1"/></net>
+
+<net id="131"><net_src comp="82" pin="2"/><net_sink comp="124" pin=2"/></net>
+
+<net id="137"><net_src comp="52" pin="0"/><net_sink comp="132" pin=0"/></net>
+
+<net id="138"><net_src comp="16" pin="0"/><net_sink comp="132" pin=1"/></net>
+
+<net id="139"><net_src comp="70" pin="2"/><net_sink comp="132" pin=2"/></net>
+
+<net id="145"><net_src comp="52" pin="0"/><net_sink comp="140" pin=0"/></net>
+
+<net id="146"><net_src comp="18" pin="0"/><net_sink comp="140" pin=1"/></net>
+
+<net id="147"><net_src comp="64" pin="2"/><net_sink comp="140" pin=2"/></net>
+
+<net id="153"><net_src comp="56" pin="0"/><net_sink comp="148" pin=0"/></net>
+
+<net id="154"><net_src comp="24" pin="0"/><net_sink comp="148" pin=1"/></net>
+
+<net id="155"><net_src comp="58" pin="2"/><net_sink comp="148" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: responseaxi_V | {1 }
+	Port: challenge1in_V | {1 }
+	Port: challenge2in_V | {1 }
+	Port: tuner_V | {1 }
+	Port: output1axi_V | {1 }
+	Port: output2axi_V | {1 }
+	Port: startin_V | {1 }
+ - Input state : 
+	Port: puf_axi_interface_v2 : challenge1axi_V | {1 }
+	Port: puf_axi_interface_v2 : challenge2axi_V | {1 }
+	Port: puf_axi_interface_v2 : tuneraxi_V | {1 }
+	Port: puf_axi_interface_v2 : responsein_V | {1 }
+	Port: puf_axi_interface_v2 : outputin1_V | {1 }
+	Port: puf_axi_interface_v2 : outputin2_V | {1 }
+	Port: puf_axi_interface_v2 : startaxi_V | {1 }
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------------------|
+| Operation|         Functional Unit         |
+|----------|---------------------------------|
+|          |    startaxi_V_read_read_fu_58   |
+|          |   outputin2_V_read_read_fu_64   |
+|          |   outputin1_V_read_read_fu_70   |
+|   read   |   responsein_V_read_read_fu_76  |
+|          |    tuneraxi_V_read_read_fu_82   |
+|          | challenge2axi_V_read_read_fu_88 |
+|          | challenge1axi_V_read_read_fu_94 |
+|----------|---------------------------------|
+|          |     StgValue_32_write_fu_100    |
+|          |     StgValue_33_write_fu_108    |
+|          |     StgValue_34_write_fu_116    |
+|   write  |     StgValue_35_write_fu_124    |
+|          |     StgValue_36_write_fu_132    |
+|          |     StgValue_37_write_fu_140    |
+|          |     StgValue_38_write_fu_148    |
+|----------|---------------------------------|
+|   Total  |                                 |
+|----------|---------------------------------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+
+|           |
++-----------+
+|  Function |
+|   Memory  |
+|Multiplexer|
+|  Register |
++-----------+
+|   Total   |
++-----------+

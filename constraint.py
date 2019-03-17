@@ -24,18 +24,18 @@ for i in range(8):
         path = "design_1_i/PUF_0/inst/PUF_id"+"[" +str(i)+ "].bottom/Tune/Coarse"+"["+str(j)+"].PC/Coarse"
         x.write("set_property BEL "+ l[j%4]+"LUT6 [get_cells \"" + path + "\"]")
         x.write('\n')
-        x.write("set_property LOC SLICE_X35Y" + str(number) + " " + "[get_cells \"" + path + "\"]")
+        x.write("set_property LOC SLICE_X38Y" + str(number) + " " + "[get_cells \"" + path + "\"]")
         x.write('\n')
         x.write('\n')
 
-number=132
+number=100
 for i in range(8):
     path = "design_1_i/PUF_0/inst/PUF_id"+"[" +str(i)+ "].arbiter"
     x.write("set_property BEL "+ l[j%4]+"LUT6 [get_cells \"" + path +"\"]")
     x.write('\n')
-    x.write("set_property LOC SLICE_X38Y" + str(number) + " " + "[get_cells \""+ path + "\"]")
+    x.write("set_property LOC SLICE_X37Y" + str(number) + " " + "[get_cells \""+ path + "\"]")
     x.write('\n')
     x.write('\n')
-    number = number + 1
+    number = number + 4
 
 x.close()

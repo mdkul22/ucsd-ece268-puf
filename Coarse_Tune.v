@@ -27,8 +27,6 @@ module Coarse_Tune #(parameter N = 16)(
 
 wire [N:0]c;
 
-assign c[N] = in;
-
 genvar k;
 generate
 for (k = N-1; k >= 0; k = k - 1)
@@ -41,6 +39,7 @@ begin: Coarse
 end
 endgenerate
 
+assign c[N] = in;
 assign out = c[0];
 
 endmodule
