@@ -1,0 +1,1262 @@
+
+
+================================================================
+== Vivado HLS Report for 'long_puf_axi_interface'
+================================================================
+* Date:           Sun Mar 17 16:38:42 2019
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        long_puf_axi
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      1.00|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+ <State 1> : 1.00ns
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4 %challenge1axi_V), !map !26"
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4 %challenge2axi_V), !map !32"
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %responseaxi_V), !map !36"
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_top_1_V), !map !40"
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_top_2_V), !map !44"
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_top_3_V), !map !48"
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_top_4_V), !map !52"
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_btm_1_V), !map !56"
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_btm_2_V), !map !60"
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_btm_3_V), !map !64"
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %tuneraxi_btm_4_V), !map !68"
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %challenge1in_V), !map !72"
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i4* %challenge2in_V), !map !76"
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %responsein_V), !map !80"
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_top_1_V), !map !84"
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_top_2_V), !map !88"
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_top_3_V), !map !92"
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_top_4_V), !map !96"
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_btm_1_V), !map !100"
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_btm_2_V), !map !104"
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_btm_3_V), !map !108"
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %tuner_btm_4_V), !map !112"
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output1axi_V), !map !116"
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %output2axi_V), !map !120"
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %outputin1_V), !map !124"
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %outputin2_V), !map !128"
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %startin_V), !map !132"
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %startaxi_V), !map !136"
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([23 x i8]* @long_puf_axi_interfa) nounwind"
+ST_1 : Operation 31 [1/1] (1.00ns)   --->   "%startaxi_V_read = call i1 @_ssdm_op_Read.s_axilite.i1(i1 %startaxi_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%outputin2_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %outputin2_V)"
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%outputin1_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %outputin1_V)"
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%responsein_V_read = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %responsein_V)"
+ST_1 : Operation 35 [1/1] (1.00ns)   --->   "%tuneraxi_btm_4_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_btm_4_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 36 [1/1] (1.00ns)   --->   "%tuneraxi_btm_3_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_btm_3_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 37 [1/1] (1.00ns)   --->   "%tuneraxi_btm_2_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_btm_2_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 38 [1/1] (1.00ns)   --->   "%tuneraxi_btm_1_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_btm_1_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 39 [1/1] (1.00ns)   --->   "%tuneraxi_top_4_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_top_4_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 40 [1/1] (1.00ns)   --->   "%tuneraxi_top_3_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_top_3_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 41 [1/1] (1.00ns)   --->   "%tuneraxi_top_2_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_top_2_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 42 [1/1] (1.00ns)   --->   "%tuneraxi_top_1_V_rea = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %tuneraxi_top_1_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 43 [1/1] (1.00ns)   --->   "%challenge2axi_V_read = call i4 @_ssdm_op_Read.s_axilite.i4(i4 %challenge2axi_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 44 [1/1] (1.00ns)   --->   "%challenge1axi_V_read = call i4 @_ssdm_op_Read.s_axilite.i4(i4 %challenge1axi_V)"   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:15]
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i4 %challenge1axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:16]
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i4 %challenge2axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:17]
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %responseaxi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:18]
+ST_1 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_top_1_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:19]
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_top_2_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:20]
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_top_3_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:21]
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_top_4_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:22]
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_btm_1_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:23]
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_btm_2_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:24]
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_btm_3_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:25]
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %tuneraxi_btm_4_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:26]
+ST_1 : Operation 57 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %output1axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:27]
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %output2axi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:28]
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i1 %startaxi_V, [10 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [long_puf_axi/long_puf_axi_interface.cpp:29]
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i4P(i4* %challenge1in_V, i4 %challenge1axi_V_read)" [long_puf_axi/long_puf_axi_interface.cpp:30]
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i4P(i4* %challenge2in_V, i4 %challenge2axi_V_read)" [long_puf_axi/long_puf_axi_interface.cpp:31]
+ST_1 : Operation 62 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i8P(i8* %responseaxi_V, i8 %responsein_V_read)" [long_puf_axi/long_puf_axi_interface.cpp:32]   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 63 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_top_1_V, i32 %tuneraxi_top_1_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:33]
+ST_1 : Operation 64 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_top_2_V, i32 %tuneraxi_top_2_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:34]
+ST_1 : Operation 65 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_top_3_V, i32 %tuneraxi_top_3_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:35]
+ST_1 : Operation 66 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_top_4_V, i32 %tuneraxi_top_4_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:36]
+ST_1 : Operation 67 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_btm_1_V, i32 %tuneraxi_btm_1_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:37]
+ST_1 : Operation 68 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_btm_2_V, i32 %tuneraxi_btm_2_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:38]
+ST_1 : Operation 69 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_btm_3_V, i32 %tuneraxi_btm_3_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:39]
+ST_1 : Operation 70 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i32P(i32* %tuner_btm_4_V, i32 %tuneraxi_btm_4_V_rea)" [long_puf_axi/long_puf_axi_interface.cpp:40]
+ST_1 : Operation 71 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i8P(i8* %output1axi_V, i8 %outputin1_V_read)" [long_puf_axi/long_puf_axi_interface.cpp:41]   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 72 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i8P(i8* %output2axi_V, i8 %outputin2_V_read)" [long_puf_axi/long_puf_axi_interface.cpp:42]   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 73 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i1P(i1* %startin_V, i1 %startaxi_V_read)" [long_puf_axi/long_puf_axi_interface.cpp:43]
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "ret void" [long_puf_axi/long_puf_axi_interface.cpp:45]
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 1
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ challenge1axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ challenge2axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ responseaxi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuneraxi_top_1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuneraxi_top_2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuneraxi_top_3_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuneraxi_top_4_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuneraxi_btm_1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuneraxi_btm_2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuneraxi_btm_3_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuneraxi_btm_4_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ challenge1in_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ challenge2in_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ responsein_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ tuner_top_1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuner_top_2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuner_top_3_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuner_top_4_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuner_btm_1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuner_btm_2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuner_btm_3_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ tuner_btm_4_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ output1axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ output2axi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ outputin1_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ outputin2_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ startin_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=0; pingpong=0; private_global=0; IO mode=ap_vld:ce=0
+Port [ startaxi_V]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+StgValue_2           (specbitsmap  ) [ 00]
+StgValue_3           (specbitsmap  ) [ 00]
+StgValue_4           (specbitsmap  ) [ 00]
+StgValue_5           (specbitsmap  ) [ 00]
+StgValue_6           (specbitsmap  ) [ 00]
+StgValue_7           (specbitsmap  ) [ 00]
+StgValue_8           (specbitsmap  ) [ 00]
+StgValue_9           (specbitsmap  ) [ 00]
+StgValue_10          (specbitsmap  ) [ 00]
+StgValue_11          (specbitsmap  ) [ 00]
+StgValue_12          (specbitsmap  ) [ 00]
+StgValue_13          (specbitsmap  ) [ 00]
+StgValue_14          (specbitsmap  ) [ 00]
+StgValue_15          (specbitsmap  ) [ 00]
+StgValue_16          (specbitsmap  ) [ 00]
+StgValue_17          (specbitsmap  ) [ 00]
+StgValue_18          (specbitsmap  ) [ 00]
+StgValue_19          (specbitsmap  ) [ 00]
+StgValue_20          (specbitsmap  ) [ 00]
+StgValue_21          (specbitsmap  ) [ 00]
+StgValue_22          (specbitsmap  ) [ 00]
+StgValue_23          (specbitsmap  ) [ 00]
+StgValue_24          (specbitsmap  ) [ 00]
+StgValue_25          (specbitsmap  ) [ 00]
+StgValue_26          (specbitsmap  ) [ 00]
+StgValue_27          (specbitsmap  ) [ 00]
+StgValue_28          (specbitsmap  ) [ 00]
+StgValue_29          (specbitsmap  ) [ 00]
+StgValue_30          (spectopmodule) [ 00]
+startaxi_V_read      (read         ) [ 00]
+outputin2_V_read     (read         ) [ 00]
+outputin1_V_read     (read         ) [ 00]
+responsein_V_read    (read         ) [ 00]
+tuneraxi_btm_4_V_rea (read         ) [ 00]
+tuneraxi_btm_3_V_rea (read         ) [ 00]
+tuneraxi_btm_2_V_rea (read         ) [ 00]
+tuneraxi_btm_1_V_rea (read         ) [ 00]
+tuneraxi_top_4_V_rea (read         ) [ 00]
+tuneraxi_top_3_V_rea (read         ) [ 00]
+tuneraxi_top_2_V_rea (read         ) [ 00]
+tuneraxi_top_1_V_rea (read         ) [ 00]
+challenge2axi_V_read (read         ) [ 00]
+challenge1axi_V_read (read         ) [ 00]
+StgValue_45          (specinterface) [ 00]
+StgValue_46          (specinterface) [ 00]
+StgValue_47          (specinterface) [ 00]
+StgValue_48          (specinterface) [ 00]
+StgValue_49          (specinterface) [ 00]
+StgValue_50          (specinterface) [ 00]
+StgValue_51          (specinterface) [ 00]
+StgValue_52          (specinterface) [ 00]
+StgValue_53          (specinterface) [ 00]
+StgValue_54          (specinterface) [ 00]
+StgValue_55          (specinterface) [ 00]
+StgValue_56          (specinterface) [ 00]
+StgValue_57          (specinterface) [ 00]
+StgValue_58          (specinterface) [ 00]
+StgValue_59          (specinterface) [ 00]
+StgValue_60          (write        ) [ 00]
+StgValue_61          (write        ) [ 00]
+StgValue_62          (write        ) [ 00]
+StgValue_63          (write        ) [ 00]
+StgValue_64          (write        ) [ 00]
+StgValue_65          (write        ) [ 00]
+StgValue_66          (write        ) [ 00]
+StgValue_67          (write        ) [ 00]
+StgValue_68          (write        ) [ 00]
+StgValue_69          (write        ) [ 00]
+StgValue_70          (write        ) [ 00]
+StgValue_71          (write        ) [ 00]
+StgValue_72          (write        ) [ 00]
+StgValue_73          (write        ) [ 00]
+StgValue_74          (ret          ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="challenge1axi_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge1axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="challenge2axi_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge2axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="responseaxi_V">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="responseaxi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="tuneraxi_top_1_V">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_top_1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="tuneraxi_top_2_V">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_top_2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="tuneraxi_top_3_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_top_3_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="tuneraxi_top_4_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_top_4_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="tuneraxi_btm_1_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_btm_1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="tuneraxi_btm_2_V">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_btm_2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="tuneraxi_btm_3_V">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_btm_3_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="tuneraxi_btm_4_V">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuneraxi_btm_4_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="challenge1in_V">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge1in_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="challenge2in_V">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="challenge2in_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="responsein_V">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="responsein_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="tuner_top_1_V">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_top_1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="tuner_top_2_V">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_top_2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="tuner_top_3_V">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_top_3_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="tuner_top_4_V">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_top_4_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="tuner_btm_1_V">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_btm_1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1000" name="tuner_btm_2_V">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_btm_2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1000" name="tuner_btm_3_V">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_btm_3_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1000" name="tuner_btm_4_V">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="tuner_btm_4_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1000" name="output1axi_V">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="output1axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1000" name="output2axi_V">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="output2axi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1000" name="outputin1_V">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputin1_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1000" name="outputin2_V">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="outputin2_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1000" name="startin_V">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="startin_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1000" name="startaxi_V">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="startaxi_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="long_puf_axi_interfa"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.s_axilite.i4"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1001" name="const_70">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1001" name="const_72">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1001" name="const_74">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1001" name="const_76">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1001" name="const_78">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i4P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1001" name="const_80">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.s_axilite.i8P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1001" name="const_82">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1001" name="const_84">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Write.ap_auto.i1P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="startaxi_V_read_read_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="1" slack="0"/>
+<pin id="88" dir="0" index="1" bw="1" slack="0"/>
+<pin id="89" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="startaxi_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="92" class="1004" name="outputin2_V_read_read_fu_92">
+<pin_list>
+<pin id="93" dir="0" index="0" bw="8" slack="0"/>
+<pin id="94" dir="0" index="1" bw="8" slack="0"/>
+<pin id="95" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="outputin2_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="98" class="1004" name="outputin1_V_read_read_fu_98">
+<pin_list>
+<pin id="99" dir="0" index="0" bw="8" slack="0"/>
+<pin id="100" dir="0" index="1" bw="8" slack="0"/>
+<pin id="101" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="outputin1_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="104" class="1004" name="responsein_V_read_read_fu_104">
+<pin_list>
+<pin id="105" dir="0" index="0" bw="8" slack="0"/>
+<pin id="106" dir="0" index="1" bw="8" slack="0"/>
+<pin id="107" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="responsein_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="110" class="1004" name="tuneraxi_btm_4_V_rea_read_fu_110">
+<pin_list>
+<pin id="111" dir="0" index="0" bw="32" slack="0"/>
+<pin id="112" dir="0" index="1" bw="32" slack="0"/>
+<pin id="113" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_btm_4_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="116" class="1004" name="tuneraxi_btm_3_V_rea_read_fu_116">
+<pin_list>
+<pin id="117" dir="0" index="0" bw="32" slack="0"/>
+<pin id="118" dir="0" index="1" bw="32" slack="0"/>
+<pin id="119" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_btm_3_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="122" class="1004" name="tuneraxi_btm_2_V_rea_read_fu_122">
+<pin_list>
+<pin id="123" dir="0" index="0" bw="32" slack="0"/>
+<pin id="124" dir="0" index="1" bw="32" slack="0"/>
+<pin id="125" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_btm_2_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="128" class="1004" name="tuneraxi_btm_1_V_rea_read_fu_128">
+<pin_list>
+<pin id="129" dir="0" index="0" bw="32" slack="0"/>
+<pin id="130" dir="0" index="1" bw="32" slack="0"/>
+<pin id="131" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_btm_1_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="134" class="1004" name="tuneraxi_top_4_V_rea_read_fu_134">
+<pin_list>
+<pin id="135" dir="0" index="0" bw="32" slack="0"/>
+<pin id="136" dir="0" index="1" bw="32" slack="0"/>
+<pin id="137" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_top_4_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="140" class="1004" name="tuneraxi_top_3_V_rea_read_fu_140">
+<pin_list>
+<pin id="141" dir="0" index="0" bw="32" slack="0"/>
+<pin id="142" dir="0" index="1" bw="32" slack="0"/>
+<pin id="143" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_top_3_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="146" class="1004" name="tuneraxi_top_2_V_rea_read_fu_146">
+<pin_list>
+<pin id="147" dir="0" index="0" bw="32" slack="0"/>
+<pin id="148" dir="0" index="1" bw="32" slack="0"/>
+<pin id="149" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_top_2_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="152" class="1004" name="tuneraxi_top_1_V_rea_read_fu_152">
+<pin_list>
+<pin id="153" dir="0" index="0" bw="32" slack="0"/>
+<pin id="154" dir="0" index="1" bw="32" slack="0"/>
+<pin id="155" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="tuneraxi_top_1_V_rea/1 "/>
+</bind>
+</comp>
+
+<comp id="158" class="1004" name="challenge2axi_V_read_read_fu_158">
+<pin_list>
+<pin id="159" dir="0" index="0" bw="4" slack="0"/>
+<pin id="160" dir="0" index="1" bw="4" slack="0"/>
+<pin id="161" dir="1" index="2" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="challenge2axi_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="164" class="1004" name="challenge1axi_V_read_read_fu_164">
+<pin_list>
+<pin id="165" dir="0" index="0" bw="4" slack="0"/>
+<pin id="166" dir="0" index="1" bw="4" slack="0"/>
+<pin id="167" dir="1" index="2" bw="4" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="challenge1axi_V_read/1 "/>
+</bind>
+</comp>
+
+<comp id="170" class="1004" name="StgValue_60_write_fu_170">
+<pin_list>
+<pin id="171" dir="0" index="0" bw="0" slack="0"/>
+<pin id="172" dir="0" index="1" bw="4" slack="0"/>
+<pin id="173" dir="0" index="2" bw="4" slack="0"/>
+<pin id="174" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_60/1 "/>
+</bind>
+</comp>
+
+<comp id="178" class="1004" name="StgValue_61_write_fu_178">
+<pin_list>
+<pin id="179" dir="0" index="0" bw="0" slack="0"/>
+<pin id="180" dir="0" index="1" bw="4" slack="0"/>
+<pin id="181" dir="0" index="2" bw="4" slack="0"/>
+<pin id="182" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_61/1 "/>
+</bind>
+</comp>
+
+<comp id="186" class="1004" name="StgValue_62_write_fu_186">
+<pin_list>
+<pin id="187" dir="0" index="0" bw="0" slack="0"/>
+<pin id="188" dir="0" index="1" bw="8" slack="0"/>
+<pin id="189" dir="0" index="2" bw="8" slack="0"/>
+<pin id="190" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_62/1 "/>
+</bind>
+</comp>
+
+<comp id="194" class="1004" name="StgValue_63_write_fu_194">
+<pin_list>
+<pin id="195" dir="0" index="0" bw="0" slack="0"/>
+<pin id="196" dir="0" index="1" bw="32" slack="0"/>
+<pin id="197" dir="0" index="2" bw="32" slack="0"/>
+<pin id="198" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_63/1 "/>
+</bind>
+</comp>
+
+<comp id="202" class="1004" name="StgValue_64_write_fu_202">
+<pin_list>
+<pin id="203" dir="0" index="0" bw="0" slack="0"/>
+<pin id="204" dir="0" index="1" bw="32" slack="0"/>
+<pin id="205" dir="0" index="2" bw="32" slack="0"/>
+<pin id="206" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_64/1 "/>
+</bind>
+</comp>
+
+<comp id="210" class="1004" name="StgValue_65_write_fu_210">
+<pin_list>
+<pin id="211" dir="0" index="0" bw="0" slack="0"/>
+<pin id="212" dir="0" index="1" bw="32" slack="0"/>
+<pin id="213" dir="0" index="2" bw="32" slack="0"/>
+<pin id="214" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_65/1 "/>
+</bind>
+</comp>
+
+<comp id="218" class="1004" name="StgValue_66_write_fu_218">
+<pin_list>
+<pin id="219" dir="0" index="0" bw="0" slack="0"/>
+<pin id="220" dir="0" index="1" bw="32" slack="0"/>
+<pin id="221" dir="0" index="2" bw="32" slack="0"/>
+<pin id="222" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_66/1 "/>
+</bind>
+</comp>
+
+<comp id="226" class="1004" name="StgValue_67_write_fu_226">
+<pin_list>
+<pin id="227" dir="0" index="0" bw="0" slack="0"/>
+<pin id="228" dir="0" index="1" bw="32" slack="0"/>
+<pin id="229" dir="0" index="2" bw="32" slack="0"/>
+<pin id="230" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_67/1 "/>
+</bind>
+</comp>
+
+<comp id="234" class="1004" name="StgValue_68_write_fu_234">
+<pin_list>
+<pin id="235" dir="0" index="0" bw="0" slack="0"/>
+<pin id="236" dir="0" index="1" bw="32" slack="0"/>
+<pin id="237" dir="0" index="2" bw="32" slack="0"/>
+<pin id="238" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_68/1 "/>
+</bind>
+</comp>
+
+<comp id="242" class="1004" name="StgValue_69_write_fu_242">
+<pin_list>
+<pin id="243" dir="0" index="0" bw="0" slack="0"/>
+<pin id="244" dir="0" index="1" bw="32" slack="0"/>
+<pin id="245" dir="0" index="2" bw="32" slack="0"/>
+<pin id="246" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_69/1 "/>
+</bind>
+</comp>
+
+<comp id="250" class="1004" name="StgValue_70_write_fu_250">
+<pin_list>
+<pin id="251" dir="0" index="0" bw="0" slack="0"/>
+<pin id="252" dir="0" index="1" bw="32" slack="0"/>
+<pin id="253" dir="0" index="2" bw="32" slack="0"/>
+<pin id="254" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_70/1 "/>
+</bind>
+</comp>
+
+<comp id="258" class="1004" name="StgValue_71_write_fu_258">
+<pin_list>
+<pin id="259" dir="0" index="0" bw="0" slack="0"/>
+<pin id="260" dir="0" index="1" bw="8" slack="0"/>
+<pin id="261" dir="0" index="2" bw="8" slack="0"/>
+<pin id="262" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_71/1 "/>
+</bind>
+</comp>
+
+<comp id="266" class="1004" name="StgValue_72_write_fu_266">
+<pin_list>
+<pin id="267" dir="0" index="0" bw="0" slack="0"/>
+<pin id="268" dir="0" index="1" bw="8" slack="0"/>
+<pin id="269" dir="0" index="2" bw="8" slack="0"/>
+<pin id="270" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_72/1 "/>
+</bind>
+</comp>
+
+<comp id="274" class="1004" name="StgValue_73_write_fu_274">
+<pin_list>
+<pin id="275" dir="0" index="0" bw="0" slack="0"/>
+<pin id="276" dir="0" index="1" bw="1" slack="0"/>
+<pin id="277" dir="0" index="2" bw="1" slack="0"/>
+<pin id="278" dir="1" index="3" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="write(1151) " fcode="write"/>
+<opset="StgValue_73/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="90"><net_src comp="62" pin="0"/><net_sink comp="86" pin=0"/></net>
+
+<net id="91"><net_src comp="54" pin="0"/><net_sink comp="86" pin=1"/></net>
+
+<net id="96"><net_src comp="64" pin="0"/><net_sink comp="92" pin=0"/></net>
+
+<net id="97"><net_src comp="50" pin="0"/><net_sink comp="92" pin=1"/></net>
+
+<net id="102"><net_src comp="64" pin="0"/><net_sink comp="98" pin=0"/></net>
+
+<net id="103"><net_src comp="48" pin="0"/><net_sink comp="98" pin=1"/></net>
+
+<net id="108"><net_src comp="64" pin="0"/><net_sink comp="104" pin=0"/></net>
+
+<net id="109"><net_src comp="26" pin="0"/><net_sink comp="104" pin=1"/></net>
+
+<net id="114"><net_src comp="66" pin="0"/><net_sink comp="110" pin=0"/></net>
+
+<net id="115"><net_src comp="20" pin="0"/><net_sink comp="110" pin=1"/></net>
+
+<net id="120"><net_src comp="66" pin="0"/><net_sink comp="116" pin=0"/></net>
+
+<net id="121"><net_src comp="18" pin="0"/><net_sink comp="116" pin=1"/></net>
+
+<net id="126"><net_src comp="66" pin="0"/><net_sink comp="122" pin=0"/></net>
+
+<net id="127"><net_src comp="16" pin="0"/><net_sink comp="122" pin=1"/></net>
+
+<net id="132"><net_src comp="66" pin="0"/><net_sink comp="128" pin=0"/></net>
+
+<net id="133"><net_src comp="14" pin="0"/><net_sink comp="128" pin=1"/></net>
+
+<net id="138"><net_src comp="66" pin="0"/><net_sink comp="134" pin=0"/></net>
+
+<net id="139"><net_src comp="12" pin="0"/><net_sink comp="134" pin=1"/></net>
+
+<net id="144"><net_src comp="66" pin="0"/><net_sink comp="140" pin=0"/></net>
+
+<net id="145"><net_src comp="10" pin="0"/><net_sink comp="140" pin=1"/></net>
+
+<net id="150"><net_src comp="66" pin="0"/><net_sink comp="146" pin=0"/></net>
+
+<net id="151"><net_src comp="8" pin="0"/><net_sink comp="146" pin=1"/></net>
+
+<net id="156"><net_src comp="66" pin="0"/><net_sink comp="152" pin=0"/></net>
+
+<net id="157"><net_src comp="6" pin="0"/><net_sink comp="152" pin=1"/></net>
+
+<net id="162"><net_src comp="68" pin="0"/><net_sink comp="158" pin=0"/></net>
+
+<net id="163"><net_src comp="2" pin="0"/><net_sink comp="158" pin=1"/></net>
+
+<net id="168"><net_src comp="68" pin="0"/><net_sink comp="164" pin=0"/></net>
+
+<net id="169"><net_src comp="0" pin="0"/><net_sink comp="164" pin=1"/></net>
+
+<net id="175"><net_src comp="78" pin="0"/><net_sink comp="170" pin=0"/></net>
+
+<net id="176"><net_src comp="22" pin="0"/><net_sink comp="170" pin=1"/></net>
+
+<net id="177"><net_src comp="164" pin="2"/><net_sink comp="170" pin=2"/></net>
+
+<net id="183"><net_src comp="78" pin="0"/><net_sink comp="178" pin=0"/></net>
+
+<net id="184"><net_src comp="24" pin="0"/><net_sink comp="178" pin=1"/></net>
+
+<net id="185"><net_src comp="158" pin="2"/><net_sink comp="178" pin=2"/></net>
+
+<net id="191"><net_src comp="80" pin="0"/><net_sink comp="186" pin=0"/></net>
+
+<net id="192"><net_src comp="4" pin="0"/><net_sink comp="186" pin=1"/></net>
+
+<net id="193"><net_src comp="104" pin="2"/><net_sink comp="186" pin=2"/></net>
+
+<net id="199"><net_src comp="82" pin="0"/><net_sink comp="194" pin=0"/></net>
+
+<net id="200"><net_src comp="28" pin="0"/><net_sink comp="194" pin=1"/></net>
+
+<net id="201"><net_src comp="152" pin="2"/><net_sink comp="194" pin=2"/></net>
+
+<net id="207"><net_src comp="82" pin="0"/><net_sink comp="202" pin=0"/></net>
+
+<net id="208"><net_src comp="30" pin="0"/><net_sink comp="202" pin=1"/></net>
+
+<net id="209"><net_src comp="146" pin="2"/><net_sink comp="202" pin=2"/></net>
+
+<net id="215"><net_src comp="82" pin="0"/><net_sink comp="210" pin=0"/></net>
+
+<net id="216"><net_src comp="32" pin="0"/><net_sink comp="210" pin=1"/></net>
+
+<net id="217"><net_src comp="140" pin="2"/><net_sink comp="210" pin=2"/></net>
+
+<net id="223"><net_src comp="82" pin="0"/><net_sink comp="218" pin=0"/></net>
+
+<net id="224"><net_src comp="34" pin="0"/><net_sink comp="218" pin=1"/></net>
+
+<net id="225"><net_src comp="134" pin="2"/><net_sink comp="218" pin=2"/></net>
+
+<net id="231"><net_src comp="82" pin="0"/><net_sink comp="226" pin=0"/></net>
+
+<net id="232"><net_src comp="36" pin="0"/><net_sink comp="226" pin=1"/></net>
+
+<net id="233"><net_src comp="128" pin="2"/><net_sink comp="226" pin=2"/></net>
+
+<net id="239"><net_src comp="82" pin="0"/><net_sink comp="234" pin=0"/></net>
+
+<net id="240"><net_src comp="38" pin="0"/><net_sink comp="234" pin=1"/></net>
+
+<net id="241"><net_src comp="122" pin="2"/><net_sink comp="234" pin=2"/></net>
+
+<net id="247"><net_src comp="82" pin="0"/><net_sink comp="242" pin=0"/></net>
+
+<net id="248"><net_src comp="40" pin="0"/><net_sink comp="242" pin=1"/></net>
+
+<net id="249"><net_src comp="116" pin="2"/><net_sink comp="242" pin=2"/></net>
+
+<net id="255"><net_src comp="82" pin="0"/><net_sink comp="250" pin=0"/></net>
+
+<net id="256"><net_src comp="42" pin="0"/><net_sink comp="250" pin=1"/></net>
+
+<net id="257"><net_src comp="110" pin="2"/><net_sink comp="250" pin=2"/></net>
+
+<net id="263"><net_src comp="80" pin="0"/><net_sink comp="258" pin=0"/></net>
+
+<net id="264"><net_src comp="44" pin="0"/><net_sink comp="258" pin=1"/></net>
+
+<net id="265"><net_src comp="98" pin="2"/><net_sink comp="258" pin=2"/></net>
+
+<net id="271"><net_src comp="80" pin="0"/><net_sink comp="266" pin=0"/></net>
+
+<net id="272"><net_src comp="46" pin="0"/><net_sink comp="266" pin=1"/></net>
+
+<net id="273"><net_src comp="92" pin="2"/><net_sink comp="266" pin=2"/></net>
+
+<net id="279"><net_src comp="84" pin="0"/><net_sink comp="274" pin=0"/></net>
+
+<net id="280"><net_src comp="52" pin="0"/><net_sink comp="274" pin=1"/></net>
+
+<net id="281"><net_src comp="86" pin="2"/><net_sink comp="274" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: responseaxi_V | {1 }
+	Port: challenge1in_V | {1 }
+	Port: challenge2in_V | {1 }
+	Port: tuner_top_1_V | {1 }
+	Port: tuner_top_2_V | {1 }
+	Port: tuner_top_3_V | {1 }
+	Port: tuner_top_4_V | {1 }
+	Port: tuner_btm_1_V | {1 }
+	Port: tuner_btm_2_V | {1 }
+	Port: tuner_btm_3_V | {1 }
+	Port: tuner_btm_4_V | {1 }
+	Port: output1axi_V | {1 }
+	Port: output2axi_V | {1 }
+	Port: startin_V | {1 }
+ - Input state : 
+	Port: long_puf_axi_interface : challenge1axi_V | {1 }
+	Port: long_puf_axi_interface : challenge2axi_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_top_1_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_top_2_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_top_3_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_top_4_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_btm_1_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_btm_2_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_btm_3_V | {1 }
+	Port: long_puf_axi_interface : tuneraxi_btm_4_V | {1 }
+	Port: long_puf_axi_interface : responsein_V | {1 }
+	Port: long_puf_axi_interface : outputin1_V | {1 }
+	Port: long_puf_axi_interface : outputin2_V | {1 }
+	Port: long_puf_axi_interface : startaxi_V | {1 }
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|----------------------------------|
+| Operation|          Functional Unit         |
+|----------|----------------------------------|
+|          |    startaxi_V_read_read_fu_86    |
+|          |    outputin2_V_read_read_fu_92   |
+|          |    outputin1_V_read_read_fu_98   |
+|          |   responsein_V_read_read_fu_104  |
+|          | tuneraxi_btm_4_V_rea_read_fu_110 |
+|          | tuneraxi_btm_3_V_rea_read_fu_116 |
+|   read   | tuneraxi_btm_2_V_rea_read_fu_122 |
+|          | tuneraxi_btm_1_V_rea_read_fu_128 |
+|          | tuneraxi_top_4_V_rea_read_fu_134 |
+|          | tuneraxi_top_3_V_rea_read_fu_140 |
+|          | tuneraxi_top_2_V_rea_read_fu_146 |
+|          | tuneraxi_top_1_V_rea_read_fu_152 |
+|          | challenge2axi_V_read_read_fu_158 |
+|          | challenge1axi_V_read_read_fu_164 |
+|----------|----------------------------------|
+|          |     StgValue_60_write_fu_170     |
+|          |     StgValue_61_write_fu_178     |
+|          |     StgValue_62_write_fu_186     |
+|          |     StgValue_63_write_fu_194     |
+|          |     StgValue_64_write_fu_202     |
+|          |     StgValue_65_write_fu_210     |
+|   write  |     StgValue_66_write_fu_218     |
+|          |     StgValue_67_write_fu_226     |
+|          |     StgValue_68_write_fu_234     |
+|          |     StgValue_69_write_fu_242     |
+|          |     StgValue_70_write_fu_250     |
+|          |     StgValue_71_write_fu_258     |
+|          |     StgValue_72_write_fu_266     |
+|          |     StgValue_73_write_fu_274     |
+|----------|----------------------------------|
+|   Total  |                                  |
+|----------|----------------------------------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+
+|           |
++-----------+
+|  Function |
+|   Memory  |
+|Multiplexer|
+|  Register |
++-----------+
+|   Total   |
++-----------+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="long_puf_axi_interface.cpp" path="C:\Users\Mayunk\long_puf_axi\long_puf_axi_interface.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="C:\Users\Mayunk\long_puf_axi\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

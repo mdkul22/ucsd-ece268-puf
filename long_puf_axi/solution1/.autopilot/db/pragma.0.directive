@@ -1,0 +1,94 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="challenge1axi"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="challenge2axi"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="responseaxi"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_top_1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_top_2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_top_3"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_top_4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_btm_1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_btm_2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_btm_3"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="tuneraxi_btm_4"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output1axi"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="output2axi"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="long_puf_axi_interface" label="">
+<pragma name="INTERFACE">
+<option name="s_axilite" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="startaxi"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

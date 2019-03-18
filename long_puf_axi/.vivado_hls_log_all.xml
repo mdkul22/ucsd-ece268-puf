@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers.&#xD;&#xA;" projectName="long_puf_axi" solutionName="solution1" date="2019-03-17T16:39:22.246-0700" type="Warning"/>
+        <logs message="WARNING: [IMPL 213-201] IO timing constraints are not applied without adding IO buffers." projectName="long_puf_axi" solutionName="solution1" date="2019-03-17T16:39:16.632-0700" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1312" content="Analyzing design file &apos;long_puf_axi/long_puf_axi_interface.cpp&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1465" content="Validating synthesis directives ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 99.883 ; gain = 44.961" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 99.918 ; gain = 44.996" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1467" content="Starting code transformations ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 108.426 ; gain = 53.504" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1472" content="Checking synthesizability ..." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 112.824 ; gain = 57.902" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 139.207 ; gain = 84.285" tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 140.695 ; gain = 85.773" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1317" content="Starting hardware synthesis ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1385" content="Synthesizing &apos;long_puf_axi_interface&apos; ..." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1477" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-42]" severity="INFO" keynum="HLS_42_1438" content="-- Implementing module &apos;long_puf_axi_interface&apos;" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1478" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="139" content="Starting scheduling ..." tag=""/>
+	<Message prefix="[SCHED 204-11]" severity="INFO" keynum="138" content="Finished scheduling." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 14.375 seconds; current allocated memory: 92.916 MB." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="INFO" keynum="439" content="Starting micro-architecture generation ..." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="211" content="Performing variable lifetime analysis." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="210" content="Exploring resource sharing." tag=""/>
+	<Message prefix="[BIND 205-101]" severity="INFO" keynum="206" content="Binding ..." tag=""/>
+	<Message prefix="[BIND 205-100]" severity="INFO" keynum="438" content="Finished micro-architecture generation." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.061 seconds; current allocated memory: 93.147 MB." tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1483" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1484" content="-- Generating RTL for module &apos;long_puf_axi_interface&apos;" tag=""/>
+	<Message prefix="[HLS 200-10]" severity="INFO" keynum="HLS_10_1485" content="----------------------------------------------------------------" tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/challenge1axi_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/challenge2axi_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/responseaxi_V&apos; to &apos;s_axilite &amp; ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_top_1_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_top_2_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_top_3_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_top_4_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_btm_1_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_btm_2_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_btm_3_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuneraxi_btm_4_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/challenge1in_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/challenge2in_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/responsein_V&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_top_1_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_top_2_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_top_3_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_top_4_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_btm_1_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_btm_2_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_btm_3_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/tuner_btm_4_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/output1axi_V&apos; to &apos;s_axilite &amp; ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/output2axi_V&apos; to &apos;s_axilite &amp; ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/outputin1_V&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/outputin2_V&apos; to &apos;ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/startin_V&apos; to &apos;ap_vld&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on port &apos;long_puf_axi_interface/startaxi_V&apos; to &apos;s_axilite &amp; ap_none&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-500]" severity="INFO" keynum="73" content="Setting interface mode on function &apos;long_puf_axi_interface&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="364" content="Bundling port &apos;return&apos;, &apos;challenge2axi_V&apos;, &apos;responseaxi_V&apos;, &apos;tuneraxi_top_1_V&apos;, &apos;tuneraxi_top_2_V&apos;, &apos;tuneraxi_top_3_V&apos;, &apos;tuneraxi_top_4_V&apos;, &apos;tuneraxi_btm_1_V&apos;, &apos;tuneraxi_btm_2_V&apos;, &apos;tuneraxi_btm_3_V&apos;, &apos;tuneraxi_btm_4_V&apos;, &apos;output1axi_V&apos;, &apos;output2axi_V&apos; and &apos;startaxi_V&apos; to AXI-Lite port AXILiteS." tag=""/>
+	<Message prefix="[RTGEN 206-100]" severity="INFO" keynum="369" content="Finished creating RTL model for &apos;long_puf_axi_interface&apos;." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="474" content=" Elapsed time: 0.191 seconds; current allocated memory: 93.426 MB." tag=""/>
+	<Message prefix="[HLS 200-111]" severity="INFO" keynum="473" content="Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 142.977 ; gain = 88.055" tag=""/>
+	<Message prefix="[SYSC 207-301]" severity="INFO" keynum="SYSC_301_1065" content="Generating SystemC RTL for long_puf_axi_interface." tag=""/>
+	<Message prefix="[VHDL 208-304]" severity="INFO" keynum="VHDL_304_1066" content="Generating VHDL RTL for long_puf_axi_interface." tag=""/>
+	<Message prefix="[VLOG 209-307]" severity="INFO" keynum="VLOG_307_1067" content="Generating Verilog RTL for long_puf_axi_interface." tag=""/>
+	<Message prefix="[HLS 200-112]" severity="INFO" keynum="472" content="Total elapsed time: 15.666 seconds; peak allocated memory: 93.426 MB." tag=""/>
+</Messages>
