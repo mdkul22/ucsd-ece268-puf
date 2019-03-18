@@ -1,0 +1,40 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -y -180 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y -160 -defaultsOSRD
+preplace inst rst_ps7_0_50M -pg 1 -lvl 2 -y -50 -defaultsOSRD
+preplace inst long_puf_axi_interface_0 -pg 1 -lvl 2 -y 320 -defaultsOSRD
+preplace inst long_puf_0 -pg 1 -lvl 4 -y 230 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 3 -y -100 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y -140 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 4 330J -230 NJ -230 N -230 1450
+preplace netloc long_puf_axi_interface_0_tuner_btm_1_V 1 2 2 840 250 N
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 2 350J -160 N
+preplace netloc long_puf_0_out_top 1 1 4 400 590 NJ 590 NJ 590 1420
+preplace netloc long_puf_axi_interface_0_tuner_btm_4_V 1 2 2 870 310 NJ
+preplace netloc long_puf_axi_interface_0_tuner_btm_3_V 1 2 2 860 290 N
+preplace netloc long_puf_axi_interface_0_tuner_top_3_V 1 2 2 820 210 N
+preplace netloc long_puf_axi_interface_0_tuner_top_1_V 1 2 2 800 170 N
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 340
+preplace netloc long_puf_axi_interface_0_startin_V 1 2 2 880 330 NJ
+preplace netloc long_puf_axi_interface_0_tuner_btm_2_V 1 2 2 850 270 N
+preplace netloc rst_ps7_0_50M_interconnect_aresetn 1 2 1 780
+preplace netloc long_puf_0_out_bottom 1 1 4 370 -240 NJ -240 NJ -240 1430
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 340J -220 NJ -220 N -220 1440
+preplace netloc long_puf_axi_interface_0_challenge1in_V 1 2 2 780 130 N
+preplace netloc rst_ps7_0_50M_peripheral_aresetn 1 1 2 390 50 790
+preplace netloc long_puf_axi_interface_0_challenge2in_V 1 2 2 790 150 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 -70 -50 360 -140 870
+preplace netloc ps7_0_axi_periph_M00_AXI 1 1 3 400 40 NJ 40 1140
+preplace netloc long_puf_axi_interface_0_tuner_top_4_V 1 2 2 830 230 N
+preplace netloc long_puf_0_response 1 1 4 380 600 NJ 600 NJ 600 1450
+preplace netloc long_puf_axi_interface_0_tuner_top_2_V 1 2 2 810 190 N
+levelinfo -pg 1 -90 130 590 1010 1280 1510 -top -250 -bot 610
+",
+}
+{
+   da_axi4_cnt: "2",
+   da_ps7_cnt: "1",
+}

@@ -1,0 +1,38 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Mar 17 16:39:59 2019
+| Host         : LAPTOP-P9DNLVP4 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'long_puf_long_puf_axi_interface_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of long_puf_long_puf_axi_interface_0_1 (xilinx.com:hls:long_puf_axi_interface:1.0) from (Rev. 1903171633) to (Rev. 1903171639)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'long_puf_long_puf_axi_interface_0_1'.
+
+
+-Upgrade has removed interface 'responseaxi_V'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'long_puf_long_puf_axi_interface_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'responseaxi_V'
+
+-Upgrade has removed port 'responseaxi_V_ap_vld'
+
+

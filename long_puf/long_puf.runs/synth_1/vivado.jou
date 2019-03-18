@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Mar 17 17:07:29 2019
+# Process ID: 19460
+# Current directory: C:/Users/Mayunk/Desktop/ECE268/long_puf/long_puf.runs/synth_1
+# Command line: vivado.exe -log long_puf_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source long_puf_wrapper.tcl
+# Log file: C:/Users/Mayunk/Desktop/ECE268/long_puf/long_puf.runs/synth_1/long_puf_wrapper.vds
+# Journal file: C:/Users/Mayunk/Desktop/ECE268/long_puf/long_puf.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source long_puf_wrapper.tcl -notrace
